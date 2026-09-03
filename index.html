@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Étu Info Bénin – EIB</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Arial,sans-serif;
+  background:#f4f7f6;
+  color:#222;
+  line-height:1.6;
+}
+
+header{
+  background:linear-gradient(135deg,#008751,#006b40);
+  color:white;
+  padding:28px 15px;
+  text-align:center;
+}
+
+header h1{
+  font-size:27px;
+  margin-bottom:5px;
+}
+
+header p{
+  font-size:15px;
+}
+
+nav{
+  background:white;
+  padding:12px 5px;
+  text-align:center;
+  box-shadow:0 2px 8px #0002;
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+
+nav a{
+  text-decoration:none;
+  color:#006b40;
+  font-weight:bold;
+  margin:5px 7px;
+  display:inline-block;
+}
+
+.hero{
+  background:white;
+  padding:45px 20px;
+  text-align:center;
+}
+
+.hero h2{
+  font-size:29px;
+  color:#008751;
+  margin-bottom:12px;
+}
+
+.hero p{
+  max-width:700px;
+  margin:auto;
+  color:#555;
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:30px 15px;
+}
+
+.section-title{
+  text-align:center;
+  color:#008751;
+  margin-bottom:22px;
+  font-size:25px;
+}
+
+.search{
+  margin-bottom:30px;
+  text-align:center;
+}
+
+.search input{
+  width:100%;
+  max-width:650px;
+  padding:14px;
+  border:1px solid #ddd;
+  border-radius:8px;
+  font-size:16px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  box-shadow:0 3px 12px #0001;
+  border-left:5px solid #008751;
+}
+
+.card h3{
+  color:#006b40;
+  margin-bottom:10px;
+}
+
+.card p{
+  color:#555;
+  font-size:15px;
+}
+
+.card small{
+  display:block;
+  margin-top:12px;
+  color:#777;
+}
+
+.badge{
+  display:inline-block;
+  background:#fcd116;
+  color:#222;
+  padding:4px 9px;
+  border-radius:20px;
+  font-size:12px;
+  font-weight:bold;
+  margin-bottom:10px;
+}
+
+.contact{
+  background:#008751;
+  color:white;
+  text-align:center;
+  padding:40px 20px;
+}
+
+.contact h2{
+  margin-bottom:15px;
+}
+
+.btn{
+  display:inline-block;
+  margin:8px;
+  padding:12px 20px;
+  border-radius:7px;
+  text-decoration:none;
+  font-weight:bold;
+  background:white;
+  color:#008751;
+}
+
+footer{
+  background:#222;
+  color:white;
+  text-align:center;
+  padding:20px;
+  font-size:14px;
+}
+
+@media(max-width:600px){
+  header h1{
+    font-size:23px;
+  }
+
+  .hero h2{
+    font-size:24px;
+  }
+
+  nav a{
+    font-size:14px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>🇧🇯 Étu Info Bénin – EIB</h1>
+  <p>Info Bénin, près de vous.</p>
+</header>
+
+<nav>
+  <a href="#accueil">Accueil</a>
+  <a href="#actualites">Actualités</a>
+  <a href="#concours">Concours</a>
+  <a href="#bourses">Bourses</a>
+  <a href="#orientation">Orientation</a>
+  <a href="#universites">Universités</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="accueil">
+  <h2>Votre avenir commence par la bonne information.</h2>
+
+  <p>
+    Étu Info Bénin – EIB est une plateforme dédiée aux étudiants,
+    aux élèves, aux nouveaux bacheliers et aux jeunes du Bénin.
+    Retrouvez des informations utiles sur les études, les concours,
+    les bourses, l'orientation, les formations et les opportunités.
+  </p>
+</section>
+
+<div class="container">
+
+<div class="search">
+  <input
+    type="text"
+    id="search"
+    placeholder="🔎 Rechercher une information..."
+    onkeyup="rechercher()">
+</div>
+
+<!-- ACTUALITÉS -->
+
+<section id="actualites">
+
+<h2 class="section-title">📰 Dernières actualités</h2>
+
+<div class="grid">
+
+<article class="card">
+<span class="badge">UNIVERSITÉ</span>
+
+<h3>🎓 Université de Parakou : informations académiques</h3>
+
+<p>
+Retrouvez les actualités, résultats, programmes d'examens,
+rattrapages, convocations et autres informations concernant
+les étudiants de l'Université de Parakou.
+</p>
+
+<small>📅 Actualité universitaire</small>
+</article>
+
+
+<article class="card">
+<span class="badge">INITIATIVE</span>
+
+<h3>💧 L'Université de Parakou lance « Hari UP »</h3>
+
+<p>
+L'Université de Parakou a lancé sa propre marque d'eau
+en bouteille dénommée « Hari UP », une initiative visant
+notamment à valoriser l'identité et les initiatives de
+l'université.
+</p>
+
+<small>📅 Actualité UP</small>
+</article>
+
+
+<article class="card">
+<span class="badge">ACADÉMIE</span>
+
+<h3>📚 Résultats et informations académiques</h3>
+
+<p>
+EIB relaie les informations importantes concernant les
+résultats, examens, rattrapages et activités académiques
+des étudiants.
+</p>
+
+<small>📢 Étu Info Bénin</small>
+</article>
+
+</div>
+</section>
+
+<br><br>
+
+
+<!-- CONCOURS -->
+
+<section id="concours">
+
+<h2 class="section-title">🎓 Concours</h2>
+
+<div class="grid">
+
+<article class="card">
+
+<span class="badge">CONCOURS 2026-2027</span>
+
+<h3>🚨 Concours d'entrée dans les écoles publiques</h3>
+
+<p>
+Les concours d'entrée dans les écoles publiques au titre
+de l'année académique 2026-2027 sont annoncés pour les
+10 et 11 septembre 2026.
+</p>
+
+<p>
+<strong>Conditions communiquées :</strong><br>
+• Être titulaire du Baccalauréat ;<br>
+• Avoir une moyenne minimale de 12/20 au Baccalauréat ;<br>
+• Être âgé de moins de 22 ans au 31 décembre 2026.
+</p>
+
+<small>📅 10 et 11 septembre 2026</small>
+
+</article>
+
+
+<article class="card">
+
+<span class="badge">INFORMATION</span>
+
+<h3>📢 Prochains concours</h3>
+
+<p>
+Cette rubrique rassemble les informations relatives aux
+concours, notamment les conditions de participation,
+les dates, les dossiers à fournir et les modalités
+d'inscription.
+</p>
+
+<small>🔔 Suivez les mises à jour EIB</small>
+
+</article>
+
+</div>
+</section>
+
+<br><br>
+
+
+<!-- BOURSES -->
+
+<section id="bourses">
+
+<h2 class="section-title">💰 Bourses & aides universitaires</h2>
+
+<div class="grid">
+
+<article class="card">
+
+<span class="badge">2026-2027</span>
+
+<h3>🎓 Allocations universitaires</h3>
+
+<p>
+Pour l'année 2026, 51 488 nouveaux bacheliers sont
+concernés par les informations relatives à l'orientation
+et aux allocations universitaires.
+</p>
+
+<p>
+<strong>19 071 allocations universitaires</strong> sont
+annoncées, dont :
+</p>
+
+<p>
+• 🎓 7 219 bourses<br>
+• 🤝 11 852 secours
+</p>
+
+<small>📊 Données communiquées pour 2026</small>
+
+</article>
+
+
+<article class="card">
+
+<span class="badge">CONDITION</span>
+
+<h3>📌 Condition d'âge</h3>
+
+<p>
+Pour bénéficier d'une bourse ou d'un secours, le candidat
+doit être âgé de 21 ans au plus tard au 31 décembre de
+l'année d'obtention du Baccalauréat, selon l'information
+communiquée.
+</p>
+
+<small>🎓 Informations destinées aux nouveaux bacheliers</small>
+
+</article>
+
+
+<article class="card">
+
+<span class="badge">OPPORTUNITÉ</span>
+
+<h3>🌍 Bourses d'études</h3>
+
+<p>
+EIB publie également les opportunités de bourses nationales
+et internationales ainsi que les conditions et modalités
+de candidature lorsqu'elles sont disponibles.
+</p>
+
+<small>🔔 Restez informés</small>
+
+</article>
+
+</div>
+</section>
+
+<br><br>
+
+
+<!-- ORIENTATION -->
+
+<section id="orientation">
+
+<h2 class="section-title">🧭 Orientation</h2>
+
+<div class="grid">
+
+<article class="card">
+
+<span class="badge">BAC 2026</span>
+
+<h3>📢 Choix des filières universitaires</h3>
+
+<p>
+Les démarches de choix de filières pour les nouveaux
+bacheliers 2026 ont démarré le 14 août 2026 sur la
+plateforme aprèsmonbac.bj.
+</p>
+
+<small>📅 14 août 2026</small>
+
+</article>
+
+
+<article class="card">
+
+<span class="badge">CONSEIL</span>
+
+<h3>⚠️ Ne vous précipitez pas !</h3>
+
+<p>
+Le classement n'est pas basé sur le principe du
+« premier arrivé, premier servi ».
+</p>
+
+<p>
+Avoir une très bonne moyenne au Baccalauréat ne garantit
+pas automatiquement une allocation dans la filière choisie.
+</p>
+
+</article>
+
+
+<article class="card">
+
+<span class="badge">CLASSEMENT</span>
+
+<h3>🏆 Comment fonctionne le classement ?</h3>
+
+<p>
+Le classement dépend notamment des filières choisies,
+de la position du candidat par rapport aux autres,
+des quotas disponibles et du type d'allocation.
+</p>
+
+<p>
+Pour chaque filière, les candidats sont classés de la
+moyenne la plus élevée à la plus faible.
+</p>
+
+</article>
+
+
+<article class="card">
+
+<span class="badge">GUIDE</span>
+
+<h3>📚 Guide d'orientation</h3>
+
+<p>
+EIB publiera les informations utiles concernant les
+filières, les universités, les conditions d'accès,
+les débouchés et les conseils d'orientation.
+</p>
+
+</article>
+
+</div>
+</section>
+
+<br><br>
+
+
+<!-- UNIVERSITÉS -->
+
+<section id="universites">
+
+<h2 class="section-title">🏫 Universités</h2>
+
+<div class="grid">
+
+<article class="card">
+
+<span class="badge">UP</span>
+
+<h3>🏛️ Université de Parakou</h3>
+
+<p>
+Retrouvez les informations concernant l'Université de
+Parakou : résultats, examens, rattrapages, inscriptions,
+convocations, concours et actualités des facultés.
+</p>
+
+</article>
+
+
+<article class="card">
+
+<span class="badge">UAC</span>
+
+<h3>🏛️ Université d'Abomey-Calavi</h3>
+
+<p>
+Cette rubrique permet de publier les informations relatives
+à l'UAC, notamment les formations, concours, bourses,
+inscriptions et opportunités destinées aux étudiants.
+</p>
+
+</article>
+
+
+<article class="card">
+
+<span class="badge">UNIVERSITÉS</span>
+
+<h3>🎓 Universités publiques et privées</h3>
+
+<p>
+EIB rassemble progressivement les informations utiles
+sur les établissements d'enseignement supérieur au Bénin
+afin d'aider les étudiants à mieux s'orienter.
+</p>
+
+</article>
+
+</div>
+</section>
+
+<br><br>
+
+
+<!-- FORMATIONS -->
+
+<section id="formations">
+
+<h2 class="section-title">📚 Formations & opportunités</h2>
+
+<article class="card">
+
+<span class="badge">RENTRÉE UNIVERSITAIRE</span>
+
+<h3>🎓 Nouvelle rentrée universitaire : Licence 2 et Licence 3</h3>
+
+<p>
+La nouvelle rentrée universitaire pour les étudiants
+de Licence 2 et de Licence 3 commence le
+<strong>14 septembre 2026</strong>.
+</p>
+
+<small>📅 14 septembre 2026</small>
+
+</article>
+
+<article class="card">
+
+<span class="badge">FORMATION</span>
+
+<h3>📖 Formations professionnelles</h3>
+
+<p>
+Découvrez les formations et programmes susceptibles
+d'aider les jeunes à développer leurs compétences et
+à préparer leur insertion professionnelle.
+</p>
+
+</article>
+
+
+<article class="card">
+
+<span class="badge">OPPORTUNITÉ</span>
+
+<h3>💼 Emploi & stages</h3>
+
+<p>
+EIB partage les opportunités d'emploi, de stage,
+d'appels à candidatures et les programmes destinés
+aux jeunes.
+</p>
+
+</article>
+
+
+<article class="card">
+
+<span class="badge">JEUNES</span>
+
+<h3>🚀 Programmes pour les jeunes</h3>
+
+<p>
+Retrouvez également les programmes de formation,
+d'entrepreneuriat et autres opportunités destinées
+à la jeunesse béninoise.
+</p>
+
+</article>
+
+</div>
+</section>
+
+</div>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<h2>📞 Contactez Étu Info Bénin</h2>
+
+<p>
+Une information à partager ? Une question ?
+Contactez l'équipe EIB.
+</p>
+
+<a class="btn" href="https://wa.me/2290160171314">
+💬 WhatsApp : +229 01 60 17 13 14
+</a>
+
+<a class="btn" href="tel:+2290160171314">
+📞 Appeler
+</a>
+
+<a class="btn" href="mailto:etuinfobenin@gmail.com">
+✉️ etuinfobenin@gmail.com
+</a>
+
+</section>
+
+<h2>📞 Contactez Étu Info Bénin</h2>
+
+<p>
+Une information à partager ? Une question ?
+Contactez l'équipe EIB.
+</p>
+
+<a class="btn" href="https://wa.me/22900000000">
+💬 WhatsApp
+</a>
+
+<a class="btn" href="mailto:etuinfobenin@gmail.com">
+✉️ Email
+</a>
+
+</section>
+
+
+<footer>
+
+© 2026 Étu Info Bénin – EIB<br>
+Info Bénin, près de vous.
+
+</footer>
+
+
+<script>
+
+function rechercher(){
+
+let input=document.getElementById("search");
+
+let recherche=input.value.toLowerCase();
+
+let cartes=document.querySelectorAll(".card");
+
+cartes.forEach(function(carte){
+
+let texte=carte.innerText.toLowerCase();
+
+if(texte.includes(recherche)){
+
+carte.style.display="";
+
+}else{
+
+carte.style.display="none";
+
+}
+
+});
+
+}
+
+</script>
+
+</body>
+</html>
